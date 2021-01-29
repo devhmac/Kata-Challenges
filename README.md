@@ -28,3 +28,9 @@ kata6-stretch;
 
 kata7-stretch;
 - take a string and convert it to camelCase
+
+kata8 
+- create a multiplicaiton table based on the number passed through the function
+
+kata9
+- Item made up of different shapes, find the total volume of the item based on the volume of individual objects, using their key properties
