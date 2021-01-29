@@ -22,3 +22,9 @@ kata 6 challenge;
 
 kata 7 challenge;
 - based on an array and threshold funciton arguments, determine if threshold has been reached for "air polution'
+
+kata6-stretch; 
+- repeat first number in array by the second number in the array. Can put multiple nested arrays through
+
+kata7-stretch;
+- take a string and convert it to camelCase
