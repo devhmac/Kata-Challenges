@@ -43,3 +43,8 @@ We are limiting our search to two ingredient recipes. We want to find a recipe t
 Our chooseRecipe() function should return the name of the correct recipe.
 
 There will always be a single correct answer, and you will NOT need to consider special cases. For example, you do NOT need to worry about cases where one bakery has BOTH the ingredients for a recipe."
+
+Kata 11  
+
+-Calculate change
+Given cost and total $ given (In cents) create a function that outputs an object describing how many of each given denomination will be given as change. 
