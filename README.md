@@ -23,6 +23,8 @@ kata 6 challenge;
 kata 7 challenge;
 - based on an array and threshold funciton arguments, determine if threshold has been reached for "air polution'
 
+------------------ STRETCH PROBLEMS ------------------
+
 kata6-stretch; 
 - repeat first number in array by the second number in the array. Can put multiple nested arrays through
 
@@ -59,3 +61,12 @@ kata 13
 - String case changer, function that takes string and caseType argument, and turns the string into that given caseType. 
 
 - complexity arrives due to needing to be able to take multiple case types in an array as argument, and apply both to the string. So all case types need to work independently, and with some in combination.
+
+kata 14
+
+- Translate an encoded string into an object
+
+-%20 represents a space character.
+-Key-value pairs are represented using an = character: key=value
+-Multiple key-value pairs are separated using a & character: key1=value1&    key2=value2
+
