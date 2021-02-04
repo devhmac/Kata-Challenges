@@ -47,4 +47,14 @@ There will always be a single correct answer, and you will NOT need to consider 
 Kata 11  
 
 -Calculate change
-Given cost and total $ given (In cents) create a function that outputs an object describing how many of each given denomination will be given as change. 
+Given cost and total $ given (In cents) create a function that outputs an object describing how many of each given denomination will be given as change.
+
+kata 12
+- take in an array of objects with instructors and the course they're taking. 
+-turn array into an object with the different courses as a property, and then add the corresponding instructor names into an array under that course type. 
+
+kata 13
+-Definitely the most challenging thus far. 
+-String case changer, function that takes string and caseType argument, and turns the string into that given caseType. 
+
+-complexity arrives due to needing to be able to take multiple case types in an array as argument, and apply both to the string. So all case types need to work independently, and with some in combination.
