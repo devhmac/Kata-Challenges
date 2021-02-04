@@ -66,9 +66,24 @@ const makeCase = function (string, command) {
         }
       }
     }
-    result = stringMod
+    result = stringMod;
   }
-
+  // upper
+  if (command === 'upper' || command.includes('upper')) {
+    if (result === '') {
+      result = string.toUpperCase();
+    } else {
+      result = result.toUpperCase();
+    }
+  }
+  //lower
+  if (command === 'lower' || command.includes('lower')) {
+    if (result === '') {
+      result = string.toLowerCase();
+    } else {
+      result = result.toLowerCase();
+    }
+  }
 
 
 
@@ -155,11 +170,17 @@ const makeCase = function (string, command) {
   }
 
 
-
 }
 
-console.log(makeCase("this is a string", ['kebab', 'consonant']));
 
+console.log(makeCase("this is a string", "camel"));
+console.log(makeCase("this is a string", "pascal"));
+console.log(makeCase("this is a string", "snake"));
+console.log(makeCase("this is a string", "kebab"));
+console.log(makeCase("this is a string", "title"));
+console.log(makeCase("this is a string", "vowel"));
+console.log(makeCase("this is a string", "consonant"));
+console.log(makeCase("this is a string", ["upper", "snake"]));
 
 
 
