@@ -1,5 +1,5 @@
-let whiteQueen = [0, 5];
-let blackQueen = [5, 0];
+let whiteQueen = [0, 0];
+let blackQueen = [6, 5];
 
 let generateBoard = function (whiteQueen, blackQueen) {
   let board = [
@@ -33,8 +33,10 @@ const queenThreat = function (generatedBoard) {
   let blackY = blackQueen[0];
 
   let threat = false;
-  let horizThreat = 0
-  let vertThreat = 0
+  let horizThreat = 0;
+  let vertThreat = 0;
+  let diagThreat = 0;
+
 
   //checks horizontal threat
   for (let x = 0; x < generatedBoard.length; x++) {
@@ -43,20 +45,44 @@ const queenThreat = function (generatedBoard) {
       threat = true;
     }
   }
-  //console.log(horizThreat)
-  //checks vertical threat
 
+  //checks vertical threat
   for (let y = 0; y < generatedBoard.length; y++) {
     vertThreat += generatedBoard[y][whiteX];
     if (vertThreat === 2) {
-      threat = true
+      threat = true;
+    }
+  }
+
+  //diagonal threat
+  for (let row = 0; row < generatedBoard.length; row++) {
+
+    for (let col = 0; col < generatedBoard[row].length; col++) {
+      if (generatedBoard[row][col] === 1) {
+        console.log([[row], [col]]);
+        for (let diag = 1; diag < generatedBoard.length; diag++) {
+          //if (diagR + row <= generatedBoard.length - 1) {
+          if (col + diag < generatedBoard.length) {
+            diagThreat += generatedBoard[row + 1][col + diag];
+            console.log('diag R [' + [[row + 1], [col + diag]] + ']');
+          }
+          if (col - diag >= 0) {
+            diagThreat += generatedBoard[row + 1][col - diag];
+            console.log('diag L [' + [[row + 1], [col - diag]] + ']');
+          }
+          row++
+        }
+      }
+    }
+    if (diagThreat === 1) {
+      threat = true;
     }
   }
 
 
 
 
-  console.log(threat)
+  return threat;
 
 
 
