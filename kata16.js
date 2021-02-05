@@ -1,5 +1,5 @@
-let whiteQueen = [0, 0];
-let blackQueen = [6, 5];
+let whiteQueen = [0, 5];
+let blackQueen = [7, 7];
 
 let generateBoard = function (whiteQueen, blackQueen) {
   let board = [
@@ -62,13 +62,19 @@ const queenThreat = function (generatedBoard) {
         console.log([[row], [col]]);
         for (let diag = 1; diag < generatedBoard.length; diag++) {
           //if (diagR + row <= generatedBoard.length - 1) {
-          if (col + diag < generatedBoard.length) {
+          if (col + diag < generatedBoard.length && row === generatedBoard.length - 1) {
+            diagThreat += generatedBoard[row][col + diag];
+            // console.log('diag R [' + [[row], [col + diag]] + ']');
+          } else if (col + diag < generatedBoard.length) {
             diagThreat += generatedBoard[row + 1][col + diag];
-            console.log('diag R [' + [[row + 1], [col + diag]] + ']');
+            //console.log('diag R [' + [[row + 1], [col + diag]] + ']');
           }
-          if (col - diag >= 0) {
+          if (col - diag >= 0 && row <= generatedBoard.length - 1) {
             diagThreat += generatedBoard[row + 1][col - diag];
-            console.log('diag L [' + [[row + 1], [col - diag]] + ']');
+            //console.log('diag L [' + [[row + 1], [col - diag]] + ']');
+          }
+          if (row + 1 > generatedBoard.length - 1) {
+            break;
           }
           row++
         }
