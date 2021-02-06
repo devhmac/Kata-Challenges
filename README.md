@@ -66,8 +66,25 @@ kata 14
 
 - Translate an encoded string into an object
 
--%20 represents a space character.
--Key-value pairs are represented using an = character: key=value
+- %20 represents a space character.
+- Key-value pairs are represented using an = character: key=value
 
--Multiple key-value pairs are separated using a & character: key1=value1&    key2=value2
+- Multiple key-value pairs are separated using a & character: key1=value1&    key2=value2
 
+kata 15
+
+- square code encription algorithm
+
+kata 16
+
+- generate 8 by 8 chess board made of 0
+- input queens based on their requested coordinates, queen represented by 1. 
+
+- Detect whether or not the queens can attack eachother based on chess movement rules. 
+
+kata 17
+
+- taxi is given a list of left and right directions. 
+-taxi starts on bottom left of grid
+
+- based on directions, output the east and north coordinates (Eg. 2 squares east, 3 squares north) as an object's property keys.
