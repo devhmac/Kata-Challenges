@@ -88,3 +88,9 @@ kata 17
 -taxi starts on bottom left of grid
 
 - based on directions, output the east and north coordinates (Eg. 2 squares east, 3 squares north) as an object's property keys.
+
+kata 18
+
+- build a random number guessing game. 
+
+program generates random number, user must input guesses. Computer will indicate if the guess is too high, to low, or not a valid input. Will tally the number of guesses required, and output once completed.
